@@ -23,6 +23,7 @@ void updateSegmentTreeLazy(int * tree, int * lazy, int low, int high, int startR
 	if(low > high){
 		return;
 	}
+	// Storing to lazy
 	
 	if(lazy[currPos] != 0){
 		tree[currPos] += lazy[currPos];
