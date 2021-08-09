@@ -21,8 +21,8 @@ void PrintBFS(int ** edges, int n, int si, bool * visited){
 			}
 			
 			if(edges[currentVertex][i] == 1 && !visited[i]){
-				q.push(i);
 				visited[i] = true;
+				q.push(i);
 			}
 		}
 	}
